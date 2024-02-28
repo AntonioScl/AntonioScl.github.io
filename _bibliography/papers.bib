@@ -3,83 +3,175 @@
 
 @string{aps = {American Physical Society,}}
 
-@book{einstein1956investigations,
-  bibtex_show={true},
-  title={Investigations on the Theory of the Brownian Movement},
-  author={Einstein, Albert},
-  year={1956},
-  publisher={Courier Corporation},
-  preview={brownian-motion.gif}
+@misc{sclocchi2024phase,
+      title={A Phase Transition in Diffusion Models Reveals the Hierarchical Nature of Data}, 
+      author={Antonio Sclocchi and Alessandro Favero and Matthieu Wyart},
+      year={2024},
+      eprint={2402.16991},
+      archivePrefix={arXiv},
+      primaryClass={stat.ML},
+      abstract={Understanding the structure of real data is paramount in advancing modern deep-learning methodologies. Natural data such as images are believed to be composed of features organised in a hierarchical and combinatorial manner, which neural networks capture during learning. Recent advancements show that diffusion models can generate high-quality images, hinting at their ability to capture this underlying structure. We study this phenomenon in a hierarchical generative model of data. We find that the backward diffusion process acting after a time $t$ is governed by a phase transition at some threshold time, where the probability of reconstructing high-level features, like the class of an image, suddenly drops. Instead, the reconstruction of low-level features, such as specific details of an image, evolves smoothly across the whole diffusion process. This result implies that at times beyond the transition, the class has changed but the generated sample may still be composed of low-level elements of the initial image. We validate these theoretical insights through numerical experiments on class-unconditional ImageNet diffusion models. Our analysis characterises the relationship between time and scale in diffusion models and puts forward generative models as powerful tools to model combinatorial data properties.},
+      selected={true},
+      arxiv={arXiv:2402.16991},
+      preview={leo_to_butterfly.jpg}
 }
 
-@article{einstein1950meaning,
-  abbr={AJP},
-  bibtex_show={true},
-  title={The meaning of relativity},
-  author={Einstein, Albert and Taub, AH},
-  journal={American Journal of Physics},
-  volume={18},
-  number={6},
-  pages={403--404},
-  year={1950},
-  publisher={American Association of Physics Teachers}
+@article{doi:10.1073/pnas.2316301121,
+author = {Antonio Sclocchi and Matthieu Wyart},
+title = {On the different regimes of stochastic gradient descent},
+journal = {Proceedings of the National Academy of Sciences},
+volume = {121},
+number = {9},
+pages = {e2316301121},
+year = {2024},
+doi = {10.1073/pnas.2316301121},
+URL = {https://www.pnas.org/doi/abs/10.1073/pnas.2316301121},
+eprint = {https://www.pnas.org/doi/pdf/10.1073/pnas.2316301121},
+abstract = {Modern deep networks are trained with stochastic gradient descent (SGD) whose key hyperparameters are the number of data considered at each step or batch size B, and the step size or learning rate η. For small B and large η, SGD corresponds to a stochastic evolution of the parameters, whose noise amplitude is governed by the “temperature” T≡η/B. Yet this description is observed to break down for sufficiently large batches B≥B∗, or simplifies to gradient descent (GD) when the temperature is sufficiently small. Understanding where these cross-overs take place remains a central challenge. Here, we resolve these questions for a teacher-student perceptron classification model and show empirically that our key predictions still apply to deep networks. Specifically, we obtain a phase diagram in the B-η plane that separates three dynamical phases: i) a noise-dominated SGD governed by temperature, ii) a large-first-step-dominated SGD and iii) GD. These different phases also correspond to different regimes of generalization error. Remarkably, our analysis reveals that the batch size B∗ separating regimes (i) and (ii) scale with the size P of the training set, with an exponent that characterizes the hardness of the classification problem.},
+selected={true},
+pdf={https://www.pnas.org/doi/epdf/10.1073/pnas.2316301121},
+preview={sgd_phase_diagram.png}
 }
 
-@article{PhysRev.47.777,
-  abbr={PhysRev},
-  title={Can Quantum-Mechanical Description of Physical Reality Be Considered Complete?},
-  author={Einstein, A. and Podolsky, B. and Rosen, N.},
-  abstract={In a complete theory there is an element corresponding to each element of reality. A sufficient condition for the reality of a physical quantity is the possibility of predicting it with certainty, without disturbing the system. In quantum mechanics in the case of two physical quantities described by non-commuting operators, the knowledge of one precludes the knowledge of the other. Then either (1) the description of reality given by the wave function in quantum mechanics is not complete or (2) these two quantities cannot have simultaneous reality. Consideration of the problem of making predictions concerning a system on the basis of measurements made on another system that had previously interacted with it leads to the result that if (1) is false then (2) is also false. One is thus led to conclude that the description of reality as given by a wave function is not complete.},
-  journal={Phys. Rev.},
-  volume={47},
-  issue={10},
-  pages={777--780},
-  numpages={0},
-  year={1935},
-  month={May},
-  publisher=aps,
-  doi={10.1103/PhysRev.47.777},
-  url={http://link.aps.org/doi/10.1103/PhysRev.47.777},
-  html={https://journals.aps.org/pr/abstract/10.1103/PhysRev.47.777},
-  pdf={example_pdf.pdf},
-  altmetric={248277},
-  dimensions={true},
-  google_scholar_id={qyhmnyLat1gC},
-  selected={true}
+
+@InProceedings{pmlr-v202-sclocchi23a,
+  title = 	 {Dissecting the Effects of {SGD} Noise in Distinct Regimes of Deep Learning},
+  author =       {Sclocchi, Antonio and Geiger, Mario and Wyart, Matthieu},
+  booktitle = 	 {Proceedings of the 40th International Conference on Machine Learning},
+  pages = 	 {30381--30405},
+  year = 	 {2023},
+  editor = 	 {Krause, Andreas and Brunskill, Emma and Cho, Kyunghyun and Engelhardt, Barbara and Sabato, Sivan and Scarlett, Jonathan},
+  volume = 	 {202},
+  series = 	 {Proceedings of Machine Learning Research},
+  month = 	 {23--29 Jul},
+  publisher =    {PMLR},
+  pdf = 	 {https://proceedings.mlr.press/v202/sclocchi23a/sclocchi23a.pdf},
+  url = 	 {https://proceedings.mlr.press/v202/sclocchi23a.html},
+  abstract = 	 {Understanding when the noise in stochastic gradient descent (SGD) affects generalization of deep neural networks remains a challenge, complicated by the fact that networks can operate in distinct training regimes. Here we study how the magnitude of this noise $T$ affects performance as the size of the training set $P$ and the scale of initialization $\alpha$ are varied. For gradient descent, $\alpha$ is a key parameter that controls if the network is lazy’ ($\alpha\gg1$) or instead learns features ($\alpha\ll1$). For classification of MNIST and CIFAR10 images, our central results are: *(i)* obtaining phase diagrams for performance in the $(\alpha,T)$ plane. They show that SGD noise can be detrimental or instead useful depending on the training regime. Moreover, although increasing $T$ or decreasing $\alpha$ both allow the net to escape the lazy regime, these changes can have opposite effects on performance. *(ii)* Most importantly, we find that the characteristic temperature $T_c$ where the noise of SGD starts affecting the trained model (and eventually performance) is a power law of $P$. We relate this finding with the observation that key dynamical quantities, such as the total variation of weights during training, depend on both $T$ and $P$ as power laws. These results indicate that a key effect of SGD noise occurs late in training, by affecting the stopping process whereby all data are fitted. Indeed, we argue that due to SGD noise, nets must develop a strongersignal’, i.e. larger informative weights, to fit the data, leading to a longer training time. A stronger signal and a longer training time are also required when the size of the training set $P$ increases. We confirm these views in the perceptron model, where signal and noise can be precisely measured. Interestingly, exponents characterizing the effect of SGD depend on the density of data near the decision boundary, as we explain.},
+  preview={dissecting_phase_diagram.png}
 }
 
-@article{einstein1905molekularkinetischen,
-  title={{\"U}ber die von der molekularkinetischen Theorie der W{\"a}rme geforderte Bewegung von in ruhenden Fl{\"u}ssigkeiten suspendierten Teilchen},
-  author={Einstein, A.},
-  journal={Annalen der physik},
-  volume={322},
-  number={8},
-  pages={549--560},
-  year={1905},
-  publisher={Wiley Online Library}
+
+@InProceedings{pmlr-v162-tomasini22a,
+  title = 	 {Failure and success of the spectral bias prediction for {L}aplace Kernel Ridge Regression: the case of low-dimensional data},
+  author =       {Tomasini, Umberto M and Sclocchi, Antonio and Wyart, Matthieu},
+  booktitle = 	 {Proceedings of the 39th International Conference on Machine Learning},
+  pages = 	 {21548--21583},
+  year = 	 {2022},
+  editor = 	 {Chaudhuri, Kamalika and Jegelka, Stefanie and Song, Le and Szepesvari, Csaba and Niu, Gang and Sabato, Sivan},
+  volume = 	 {162},
+  series = 	 {Proceedings of Machine Learning Research},
+  month = 	 {17--23 Jul},
+  publisher =    {PMLR},
+  pdf = 	 {https://proceedings.mlr.press/v162/tomasini22a/tomasini22a.pdf},
+  url = 	 {https://proceedings.mlr.press/v162/tomasini22a.html},
+  abstract = 	 {Recently, several theories including the replica method made predictions for the generalization error of Kernel Ridge Regression. In some regimes, they predict that the method has a ‘spectral bias’: decomposing the true function $f^*$ on the eigenbasis of the kernel, it fits well the coefficients associated with the O(P) largest eigenvalues, where $P$ is the size of the training set. This prediction works very well on benchmark data sets such as images, yet the assumptions these approaches make on the data are never satisfied in practice. To clarify when the spectral bias prediction holds, we first focus on a one-dimensional model where rigorous results are obtained and then use scaling arguments to generalize and test our findings in higher dimensions. Our predictions include the classification case $f(x)=$sign$(x_1)$ with a data distribution that vanishes at the decision boundary $p(x)\sim x_1^{\chi}$. For $\chi&gt;0$ and a Laplace kernel, we find that (i) there exists a cross-over ridge $\lambda^*_{d,\chi}(P)\sim P^{-\frac{1}{d+\chi}}$ such that for $\lambda\gg \lambda^*_{d,\chi}(P)$, the replica method applies, but not for $\lambda\ll\lambda^*_{d,\chi}(P)$, (ii) in the ridge-less case, spectral bias predicts the correct training curve exponent only in the limit $d\rightarrow\infty$.},
+  preview={failure_success.png}
 }
 
-@article{einstein1905movement,
-  abbr={Ann. Phys.},
-  title={Un the movement of small particles suspended in statiunary liquids required by the molecular-kinetic theory 0f heat},
-  author={Einstein, A.},
-  journal={Ann. Phys.},
-  volume={17},
-  pages={549--560},
-  year={1905}
+
+@article{PhysRevE.105.024134,
+  title = {High-dimensional optimization under nonconvex excluded volume constraints},
+  author = {Sclocchi, Antonio and Urbani, Pierfrancesco},
+  journal = {Phys. Rev. E},
+  volume = {105},
+  issue = {2},
+  pages = {024134},
+  numpages = {7},
+  year = {2022},
+  month = {Feb},
+  publisher = {American Physical Society},
+  doi = {10.1103/PhysRevE.105.024134},
+  url = {https://link.aps.org/doi/10.1103/PhysRevE.105.024134},
+  abstract={We consider high-dimensional random optimization problems where the dynamical variables are subjected to nonconvex excluded volume constraints. We focus on the case in which the cost function is a simple quadratic cost and the excluded volume constraints are modeled by a perceptron constraint satisfaction problem. We show that depending on the density of constraints, one can have different situations. If the number of constraints is small, one typically has a phase where the ground state of the cost function is unique and sits on the boundary of the island of configurations allowed by the constraints. In this case, there is a hypostatic number of marginally satisfied constraints. If the number of constraints is increased one enters a glassy phase where the cost function has many local minima sitting again on the boundary of the regions of allowed configurations. At the phase transition point, the total number of marginally satisfied constraints becomes equal to the number of degrees of freedom in the problem and therefore we say that these minima are isostatic. We conjecture that by increasing further the constraints the system stays isostatic up to the point where the volume of available phase space shrinks to zero. We derive our results using the replica method and we also analyze a dynamical algorithm, the Karush-Kuhn-Tucker algorithm, through dynamical mean-field theory and we show how to recover the results of the replica approach in the replica symmetric phase.},
+  pdf={https://journals.aps.org/pre/pdf/10.1103/PhysRevE.105.024134},
+  preview={chaos.png}
 }
 
-@article{einstein1905electrodynamics,
-  title={On the electrodynamics of moving bodies},
-  author={Einstein, A.},
-  year={1905}
+
+@article{Franz_2021,
+doi = {10.1088/1742-5468/abdc16},
+url = {https://dx.doi.org/10.1088/1742-5468/abdc16},
+year = {2021},
+month = {feb},
+publisher = {IOP Publishing and SISSA},
+volume = {2021},
+number = {2},
+pages = {023208},
+author = {Silvio Franz and Antonio Sclocchi and Pierfrancesco Urbani},
+title = {Surfing on minima of isostatic landscapes: avalanches and unjamming transition},
+journal = {Journal of Statistical Mechanics: Theory and Experiment},
+abstract = {Recently, we showed that optimization problems, both in infinite as well as in finite dimensions, for continuous variables and soft excluded volume constraints, can display entire isostatic phases where local minima of the cost function are marginally stable configurations endowed with non-linear excitations [1, 2]. In this work we describe an athermal adiabatic algorithm to explore with continuity the corresponding rough high-dimensional landscape. We concentrate on a prototype problem of this kind, the spherical perceptron optimization problem with linear cost function (hinge loss). This algorithm allows to ‘surf’ between isostatic marginally stable configurations and to investigate some properties of such landscape. In particular we focus on the statistics of avalanches occurring when local minima are destabilized. We show that when perturbing such minima, the system undergoes plastic rearrangements whose size is power law distributed and we characterize the corresponding critical exponent. Finally we investigate the critical properties of the unjamming transition, showing that the linear interaction potential gives rise to logarithmic behavior in the scaling of energy and pressure as a function of the distance from the unjamming point. For some quantities, the logarithmic corrections can be gauged out. This is the case of the number of soft constraints that are violated as a function of the distance from jamming which follows a non-trivial power law behavior.},
+pdf={https://iopscience.iop.org/article/10.1088/1742-5468/abdc16/pdf},
+preview={avalanches.png}
 }
 
-@book{przibram1967letters,
-  bibtex_show={true},
-  title={Letters on wave mechanics},
-  author={Einstein, Albert and Schrödinger, Erwin and Planck, Max and Lorentz, Hendrik Antoon and Przibram, Karl},
-  year={1967},
-  publisher={Vision},
-  preview={wave-mechanics.gif}
+
+@Article{10.21468/SciPostPhys.10.1.013,
+	title={{Proliferation of non-linear excitations in the piecewise-linear perceptron}},
+	author={Antonio Sclocchi and Pierfrancesco Urbani},
+	journal={SciPost Phys.},
+	volume={10},
+	pages={013},
+	year={2021},
+	publisher={SciPost},
+	doi={10.21468/SciPostPhys.10.1.013},
+	url={https://scipost.org/10.21468/SciPostPhys.10.1.013},
+  pdf={https://scipost.org/SciPostPhys.10.1.013/pdf},
+  abstract={We investigate the properties of local minima of the energy landscape of a continuous non-convex optimization problem, the spherical perceptron with piecewise linear cost function and show that they are critical, marginally stable and displaying a set of pseudo- gaps, singularities and non-linear excitations whose properties appear to be in the same universality class of jammed packings of hard spheres. The piecewise linear perceptron problem appears as an evolution of the purely linear perceptron optimization problem that has been recently investigated in [1]. Its cost function contains two non-analytic points where the derivative has a jump. Correspondingly, in the non-convex/glassy phase, these two points give rise to four pseudogaps in the force distribution and this induces four power laws in the gap distribution as well. In addition one can define an extended notion of isostaticity and show that local minima appear again to be isostatic in this phase. We believe that our results generalize naturally to more complex cases with a proliferation of non-linear excitations as the number of non-analytic points in the cost function is increased.},
+  preview={proliferation.png}
+}
+
+
+@Article{10.21468/SciPostPhys.9.1.012,
+	title={{Critical energy landscape of linear soft spheres}},
+	author={Silvio Franz and Antonio Sclocchi and Pierfrancesco Urbani},
+	journal={SciPost Phys.},
+	volume={9},
+	pages={012},
+	year={2020},
+	publisher={SciPost},
+	doi={10.21468/SciPostPhys.9.1.012},
+	url={https://scipost.org/10.21468/SciPostPhys.9.1.012},
+  pdf={https://scipost.org/SciPostPhys.9.1.012/pdf},
+  abstract={We show that soft spheres interacting with a linear ramp potential when overcompressed beyond the jamming point fall in an amorphous solid phase which is critical, mechanically marginally stable and share many features with the jamming point itself. In the whole phase, the relevant local minima of the potential energy landscape display an isostatic contact network of perfectly touching spheres whose statistics is controlled by an infinite lengthscale. Excitations around such energy minima are non-linear, system spanning, and characterized by a set of non-trivial critical exponents. We perform numerical simulations to measure their values and show that, while they coincide, within numerical precision, with the critical exponents appearing at jamming, the nature of the corresponding excitations is richer. Therefore, linear soft spheres appear as a novel class of finite dimensional systems that self-organize into new, critical, marginally stable, states.},
+  preview={linear_spheres.png}
+}
+
+
+@article{PhysRevLett.123.115702,
+  title = {Critical Jammed Phase of the Linear Perceptron},
+  author = {Franz, Silvio and Sclocchi, Antonio and Urbani, Pierfrancesco},
+  journal = {Phys. Rev. Lett.},
+  volume = {123},
+  issue = {11},
+  pages = {115702},
+  numpages = {5},
+  year = {2019},
+  month = {Sep},
+  publisher = {American Physical Society},
+  doi = {10.1103/PhysRevLett.123.115702},
+  url = {https://link.aps.org/doi/10.1103/PhysRevLett.123.115702},
+  abstract={Criticality in statistical physics naturally emerges at isolated points in the phase diagram. Jamming of spheres is not an exception: varying density, it is the critical point that separates the unjammed phase where spheres do not overlap and the jammed phase where they cannot be arranged without overlaps. The same remains true in more general constraint satisfaction problems with continuous variables where jamming coincides with the (protocol dependent) satisfiability transition point. In this work we show that by carefully choosing the cost function to be minimized, the region of criticality extends to occupy a whole region of the jammed phase. As a working example, we consider the spherical perceptron with a linear cost function in the unsatisfiable jammed phase and we perform numerical simulations which show critical power laws emerging in the configurations obtained minimizing the linear cost function. We develop a scaling theory to compute the emerging critical exponents.},
+  pdf={https://journals.aps.org/prl/pdf/10.1103/PhysRevLett.123.115702},
+  preview = {linear_perceptron-phase_diagram.png}
+}
+
+
+@article{PhysRevB.95.054307,
+  title = {Topology of a dissipative spin: Dynamical Chern number, bath-induced nonadiabaticity, and a quantum dynamo effect},
+  author = {Henriet, Lo\"{\i}c and Sclocchi, Antonio and Orth, Peter P. and Le Hur, Karyn},
+  journal = {Phys. Rev. B},
+  volume = {95},
+  issue = {5},
+  pages = {054307},
+  numpages = {16},
+  year = {2017},
+  month = {Feb},
+  publisher = {American Physical Society},
+  doi = {10.1103/PhysRevB.95.054307},
+  url = {https://link.aps.org/doi/10.1103/PhysRevB.95.054307},
+  abstract={We analyze the topological deformations of a spin-1/2 in an effective magnetic field induced by an ohmic quantum dissipative environment at zero temperature. From Bethe Ansatz results and a variational approach, we confirm that the Chern number is preserved in the delocalized phase for $\alpha<1$. We report a divergence of the Berry curvature at the equator when $\alpha_c=1$ that appears at the localization Kosterlitz-Thouless quantum phase transition in this model. Recent experiments in quantum circuits have engineered non-equilibrium protocols in time to access topological properties at equilibrium from the measure of the (quasi-)adiabatic out-of-equilibrium spin expectation values. Applying a numerically exact stochastic Schr\"{o}dinger equation we find that, for a fixed sweep velocity, the bath induces a crossover from (quasi-)adiabatic to non-adiabatic dynamical behavior when the spin bath coupling increases. We also investigate the particular regime $H/\omega_c \ll v/H \ll 1$, where the dynamical Chern number observable built from out-of-equilibrium spin expectation values vanishes at $\alpha=1/2$. In this regime, the mapping to an interacting resonance level model enables us to characterize the evolution of the dynamical Chern number in the vicinity of $\alpha=1/2$. Then, we provide an intuitive physical explanation of the breakdown of adiabaticity in analogy to the Faraday effect in electromagnetism. We demonstrate that the driving of the spin leads to the production of a large number of bosonic excitations in the bath, which in return strongly affect the spin dynamics. Finally, we quantify the spin-bath entanglement and build an analogy with an effective model at thermal equilibrium.},
+  pdf={https://journals.aps.org/prb/pdf/10.1103/PhysRevB.95.054307},
+  preview = {dissipative_spin.png}
 }
