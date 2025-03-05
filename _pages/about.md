@@ -12,7 +12,7 @@ profile:
   more_info: >
     <p>Sainsbury Wellcome Centre, UCL</p>
     <p>25 Howland St</p>
-    <p>London W1T 4JG, UK</p>
+    <p>London, UK</p>
 
 news: true # includes a list of news items
 latest_posts: false # includes a list of the newest posts
