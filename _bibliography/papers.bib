@@ -3,17 +3,59 @@
 
 @string{aps = {American Physical Society,}}
 
-@misc{sclocchi2024phase,
-      title={A Phase Transition in Diffusion Models Reveals the Hierarchical Nature of Data}, 
-      author={Antonio Sclocchi and Alessandro Favero and Matthieu Wyart},
-      year={2024},
-      eprint={2402.16991},
+@misc{favero2025compositional,
+      title={How compositional generalization and creativity improve as diffusion models are trained}, 
+      author={Alessandro Favero and Antonio Sclocchi and Francesco Cagnetta and Pascal Frossard and Matthieu Wyart},
+      year={2025},
+      eprint={2502.12089},
       archivePrefix={arXiv},
       primaryClass={stat.ML},
-      abstract={Understanding the structure of real data is paramount in advancing modern deep-learning methodologies. Natural data such as images are believed to be composed of features organised in a hierarchical and combinatorial manner, which neural networks capture during learning. Recent advancements show that diffusion models can generate high-quality images, hinting at their ability to capture this underlying structure. We study this phenomenon in a hierarchical generative model of data. We find that the backward diffusion process acting after a time $t$ is governed by a phase transition at some threshold time, where the probability of reconstructing high-level features, like the class of an image, suddenly drops. Instead, the reconstruction of low-level features, such as specific details of an image, evolves smoothly across the whole diffusion process. This result implies that at times beyond the transition, the class has changed but the generated sample may still be composed of low-level elements of the initial image. We validate these theoretical insights through numerical experiments on class-unconditional ImageNet diffusion models. Our analysis characterises the relationship between time and scale in diffusion models and puts forward generative models as powerful tools to model combinatorial data properties.},
-      selected={true},
-      arxiv={arXiv:2402.16991},
-      preview={leo_to_butterfly.jpg}
+      url={https://arxiv.org/abs/2502.12089},
+      preview={unet_rhm.png}
+}
+
+@inproceedings{sclocchi2025probing,
+title={Probing the Latent Hierarchical Structure of Data via Diffusion Models},
+author={Antonio Sclocchi and Alessandro Favero and Noam Itzhak Levi and Matthieu Wyart},
+booktitle={The Thirteenth International Conference on Learning Representations},
+year={2025},
+url={https://openreview.net/forum?id=0GzqVqCKns},
+preview={diffusion_tree.png}
+}
+
+@article{sclocchi2024phase,
+author = {Antonio Sclocchi  and Alessandro Favero  and Matthieu Wyart },
+title = {A phase transition in diffusion models reveals the hierarchical nature of data},
+journal = {Proceedings of the National Academy of Sciences},
+volume = {122},
+number = {1},
+pages = {e2408799121},
+year = {2025},
+doi = {10.1073/pnas.2408799121},
+URL = {https://www.pnas.org/doi/abs/10.1073/pnas.2408799121},
+eprint = {https://www.pnas.org/doi/pdf/10.1073/pnas.2408799121},
+abstract = {The success of deep learning is often attributed to its ability to harness the hierarchical and compositional structure of data. However, formalizing and testing this notion remained a challenge. This work shows how diffusion models—generative AI techniques producing high-resolution images—operate at different hierarchical levels of features over different time scales of the diffusion process. This phenomenon allows for the generation of images of various classes by recombining low-level features. We study a hierarchical model of data that reproduces this phenomenology and provides a theoretical explanation for this compositional behavior. Overall, the present framework provides a description of how generative models operate, and put forward diffusion models as powerful lenses to probe data structure. Understanding the structure of real data is paramount in advancing modern deep-learning methodologies. Natural data such as images are believed to be composed of features organized in a hierarchical and combinatorial manner, which neural networks capture during learning. Recent advancements show that diffusion models can generate high-quality images, hinting at their ability to capture this underlying compositional structure. We study this phenomenon in a hierarchical generative model of data. We find that the backward diffusion process acting after a time t is governed by a phase transition at some threshold time, where the probability of reconstructing high-level features, like the class of an image, suddenly drops. Instead, the reconstruction of low-level features, such as specific details of an image, evolves smoothly across the whole diffusion process. This result implies that at times beyond the transition, the class has changed, but the generated sample may still be composed of low-level elements of the initial image. We validate these theoretical insights through numerical experiments on class-unconditional ImageNet diffusion models. Our analysis characterizes the relationship between time and scale in diffusion models and puts forward generative models as powerful tools to model combinatorial data properties.},
+selected={true},
+pdf={https://www.pnas.org/doi/pdf/10.1073/pnas.2408799121},
+google_scholar_id={ULOm3_A8WrAC},
+altmetric={true},
+preview={leo_to_butterfly.jpg}
+}
+
+@article{doi:10.1073/pnas.2414955121,
+author = {Beatriz Borges  and Negar Foroutan  and Deniz Bayazit  and Anna Sotnikova  and Syrielle Montariol  and Tanya Nazaretzky  and Mohammadreza Banaei  and Alireza Sakhaeirad  and Philippe Servant  and Seyed Parsa Neshaei  and Jibril Frej  and Angelika Romanou  and Gail Weiss  and Sepideh Mamooler  and Zeming Chen  and Simin Fan  and Silin Gao  and Mete Ismayilzada  and Debjit Paul  and Philippe Schwaller  and Sacha Friedli  and Patrick Jermann  and Tanja Käser  and Antoine Bosselut  and EPFL Grader Consortium and EPFL Data Consortium},
+title = {Could ChatGPT get an engineering degree? Evaluating higher education vulnerability to AI assistants},
+journal = {Proceedings of the National Academy of Sciences},
+volume = {121},
+number = {49},
+pages = {e2414955121},
+year = {2024},
+doi = {10.1073/pnas.2414955121},
+URL = {https://www.pnas.org/doi/abs/10.1073/pnas.2414955121},
+eprint = {https://www.pnas.org/doi/pdf/10.1073/pnas.2414955121},
+abstract = {Universities primarily evaluate student learning through various course assessments. Our study demonstrates that AI assistants, such as ChatGPT, can answer at least 65.8\% of examination questions correctly across 50 diverse courses in the technical and natural sciences. Our analysis demonstrates that these capabilities render many degree programs (and their teaching objectives) vulnerable to potential misuse of these systems. These findings call for attention to assessment design to mitigate the possibility that AI assistants could divert students from acquiring the knowledge and critical thinking skills that university programs are meant to instill. AI assistants, such as ChatGPT, are being increasingly used by students in higher education institutions. While these tools provide opportunities for improved teaching and education, they also pose significant challenges for assessment and learning outcomes. We conceptualize these challenges through the lens of vulnerability, the potential for university assessments and learning outcomes to be impacted by student use of generative AI. We investigate the potential scale of this vulnerability by measuring the degree to which AI assistants can complete assessment questions in standard university-level Science, Technology, Engineering, and Mathematics (STEM) courses. Specifically, we compile a dataset of textual assessment questions from 50 courses at the École polytechnique fédérale de Lausanne (EPFL) and evaluate whether two AI assistants, GPT-3.5 and GPT-4 can adequately answer these questions. We use eight prompting strategies to produce responses and find that GPT-4 answers an average of 65.8\% of questions correctly, and can even produce the correct answer across at least one prompting strategy for 85.1\% of questions. When grouping courses in our dataset by degree program, these systems already pass the nonproject assessments of large numbers of core courses in various degree programs, posing risks to higher education accreditation that will be amplified as these models improve. Our results call for revising program-level assessment design in higher education in light of advances in generative AI.},
+pdf={https://www.pnas.org/doi/pdf/10.1073/pnas.2414955121},
+preview={education.png}
 }
 
 @article{doi:10.1073/pnas.2316301121,
