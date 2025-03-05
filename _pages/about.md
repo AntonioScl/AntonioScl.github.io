@@ -2,16 +2,17 @@
 layout: about
 title: about
 permalink: /
-subtitle: Post-Doc researcher, <a href='https://www.epfl.ch/labs/pcsl/'>Physics of Complex Systems Lab, EPFL</a>
+#subtitle: Post-Doc researcher, <a href='https://www.epfl.ch/labs/pcsl/'>Physics of Complex Systems Lab, EPFL</a>
+subtitle: Research Fellow, <a href='https://www.saxelab.org/'>Gatsby Unit, UCL Theory of Learning Lab</a>
 
 profile:
   align: right
   image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
-    <p>BSP 528 (Cubotron UNIL)</p>
-    <p>Rte de la Sorge</p>
-    <p>Lausanne, Switzerland</p>
+    <p>Sainsbury Wellcome Centre, UCL</p>
+    <p>25 Howland St</p>
+    <p>London W1T 4JG, UK</p>
 
 news: true # includes a list of news items
 latest_posts: false # includes a list of the newest posts
@@ -22,8 +23,9 @@ social: false # includes social icons at the bottom of the page
 I am a theoretical physicist working at the intersection between **statistical physics** and **deep learning**.
 My current research interest revolves around neural network optimization, diffusion models, and data structure.
 
-Currently, I work in the group of [Matthieu Wyart](https://scholar.google.com/citations?user=YkjjioAAAAAJ&hl=en) at [EPFL](https://www.epfl.ch/en/).
-Previously, I earned a PhD in theoretical physics at [LPTMS, Université Paris-Saclay](http://www.lptms.universite-paris-saclay.fr) under the supervision of [Silvio Franz](https://scholar.google.it/citations?user=quhI7uQAAAAJ&hl=en) and [Pierfrancesco Urbani](https://scholar.google.it/citations?user=tV7pohwAAAAJ&hl=en), working on disordered and glassy systems.
+Currently, I work in the group of [Andrew Saxe](https://www.saxelab.org/) at [UCL](https://www.ucl.ac.uk/gatsby/gatsby-computational-neuroscience-unit).
+Previously, I worked in the group of [Matthieu Wyart](https://scholar.google.com/citations?user=YkjjioAAAAAJ&hl=en) at [EPFL](https://www.epfl.ch/en/), building models of data structure and learning dynamics inspired by statistical physics.
+I earned a PhD in theoretical physics at [LPTMS, Université Paris-Saclay](http://www.lptms.universite-paris-saclay.fr) under the supervision of [Silvio Franz](https://scholar.google.it/citations?user=quhI7uQAAAAJ&hl=en) and [Pierfrancesco Urbani](https://scholar.google.it/citations?user=tV7pohwAAAAJ&hl=en), working on disordered and glassy systems.
 
 <!-- Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
 
