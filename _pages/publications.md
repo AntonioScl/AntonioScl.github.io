@@ -7,6 +7,8 @@ nav: true
 nav_order: 2
 ---
 
+Superscript * denotes co-first authorship. Check also my [Google Scholar](https://scholar.google.com/citations?hl=en&user=R81DvG0AAAAJ&view_op=list_works) profile.
+
 <!-- _pages/publications.md -->
 <div class="publications">
 
